@@ -13,3 +13,14 @@ Create a class called Person with:
 - A method greet() that prints "Hello, my name is {name}."
 - A __str__ method that returns "Person(name=name, age=age)"
 """
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def greet(self):
+        return f" Hello my name is {self.name}"
+    def __str__(self):
+        return f"Person (name={self.name}, age={self.age})"
+a=Person('ali',13)
+print(a.greet())
+
