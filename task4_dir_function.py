@@ -13,3 +13,8 @@ Write a function called show_info(obj) that:
 - Prints the result of str(obj)
 - Call show_info() for at least one instance of Person, Student, and Teacher.
 """
+from task1_base_class import Person
+from task2_inheritance import Student
+from task3_more_inheritance import Teacher
+def show_info(obj):
+    return dir(obj)
